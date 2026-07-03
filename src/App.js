@@ -1,16 +1,19 @@
 
 import './App.css';
 
-function App() {
+import React from 'react'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        
-        
-      </header>
+    <div className='d-flex'>
+  
+     <div>sidebar</div>
+     <div>feed</div>
+     <div>suggestions</div>
+
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
