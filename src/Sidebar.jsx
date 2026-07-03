@@ -3,7 +3,7 @@ import React from 'react'
 const Sidebar = () => {
   return (
     <>
-    <div>
+    <div className='d-flex flex-column gap-3'>
         <img className='logo-text' src="instagram-text.png" alt="" />
         <div> <i className="bi bi-house-door"></i> Home</div>
         <div><i className="bi bi-search"></i>Search</div>
@@ -16,7 +16,7 @@ const Sidebar = () => {
         
     </div>
 
-    <div>
+    <div className="position-fixed bottom-0 d-flex flex-column gap-3">
         <div><i className="bi bi-threads"></i>Threads</div>
         <div><i class="bi bi-list"></i>More</div>
     </div>
