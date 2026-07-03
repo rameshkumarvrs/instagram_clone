@@ -8,7 +8,7 @@ const Sidebar = () => {
             <img className='logo-text' src="instagram-text.png" alt="" />
             <div> <i className="bi bi-house-door"></i> Home</div>
             <div><i className="bi bi-search"></i>Search</div>
-            <div><i class="bi bi-compass-fill"></i>Explore</div>
+            <div><i className="bi bi-compass-fill"></i>Explore</div>
             <div><i className="bi bi-file-play"></i>Reels</div>
             <div><i className="bi bi-chat-dots"></i>Messages</div>
             <div><i className="bi bi-heart"></i>Notifications</div>
@@ -19,7 +19,7 @@ const Sidebar = () => {
 
         <div className="position-fixed bottom-0 d-flex flex-column gap-3 mb-3">
             <div><i className="bi bi-threads"></i>Threads</div>
-            <div><i class="bi bi-list"></i>More</div>
+            <div><i className="bi bi-list"></i>More</div>
         </div>
     
     </div>
