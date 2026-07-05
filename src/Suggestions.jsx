@@ -14,18 +14,21 @@ const Suggestions = () => {
 
      fetch("http://localhost:3002/suggestions").
     then(data => data.json()).
-    then(data=> setProfile(data)).
+    then(data=> setSuggestions(data)).
     catch(err => console.log(err))
 
   },[])
 
   return (
     <div>
-    
+      {profile ?
        <div className='d-flex'>
-          <img className="dp rounded-circle" src={post.profilePic} alt="Profile pic" />
-          <h5>{post.username}</h5>
-       </div>
+          <img className="dp rounded-circle" src={profile.profilePic} alt="Profile pic" />
+          <h5>{profile.username}</h5>
+          <p>Switch</p>
+       </div> 
+
+       : <p>Loading</p> }
 
     </div>
   )
