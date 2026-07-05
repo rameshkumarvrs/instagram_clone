@@ -31,6 +31,29 @@ const Suggestions = () => {
 
        : <p>Loading</p> }
 
+       <div className='d-flex'>
+        <p>Suggested for you</p>
+        <b className='ms-auto'>See all</b>
+       </div>
+
+       {suggestions.length > 0 ? (
+        <div>
+           {suggestions.map((suggestion)=>(
+            <div className='my-3' key={suggestion.id}>
+               <div className='d-flex'>
+                <img className="dp rounded-circle" src={suggestion.profilePic} alt="Profile pic" />
+                <h5>{suggestion.username}</h5>
+               </div>
+              
+            </div>
+           ))}
+        </div>
+      ) : (
+        <div>
+          Loading posts
+        </div>
+      )}
+
       </div>
       
 
