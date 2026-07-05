@@ -21,14 +21,18 @@ const Suggestions = () => {
 
   return (
     <div>
-      {profile ?
-       <div className='d-flex'>
+      <div className='suggestion w-75 m-4'>
+        {profile ?
+       <div className='d-flex '>
           <img className="dp rounded-circle" src={profile.profilePic} alt="Profile pic" />
           <h5>{profile.username}</h5>
-          <p>Switch</p>
+          <small className='ms-auto text-primary'>Switch</small>
        </div> 
 
        : <p>Loading</p> }
+
+      </div>
+      
 
     </div>
   )
