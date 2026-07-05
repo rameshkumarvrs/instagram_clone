@@ -72,5 +72,57 @@
       "comments": 9,
       "createdAt": "2026-07-03T20:30:00Z"
     }
-  ]
+  ],
+  "profile":  {
+      "id": 1,
+      
+      "username": "john_doe",
+      "profilePic": "https://i.pravatar.cc/150?img=1"
+      
+      
+    },
+
+    "suggestions": [
+      {
+      "id": 1,
+      
+      "username": "john_doe",
+      "profilePic": "https://i.pravatar.cc/150?img=1"
+      
+    },
+     {
+      "id": 2,
+      
+      "username": "jane_smith",
+      "profilePic": "https://i.pravatar.cc/150?img=2"
+      
+    },
+
+    {
+      "id": 3,
+     
+      "username": "alex_99",
+      "profilePic": "https://i.pravatar.cc/150?img=3"
+     
+    },
+
+    {
+      "id": 4,
+     
+      "username": "emma_w",
+      "profilePic": "https://i.pravatar.cc/150?img=4"
+      
+    },
+
+    {
+      "id": 5,
+      
+      "username": "emma_w",
+      "profilePic": "https://i.pravatar.cc/150?img=5"
+    
+    }
+
+
+
+    ]
 }
