@@ -44,3 +44,40 @@
 .suggestion .dp {
   margin-top: 0px
 }
+
+.gradfgfgfgient-border {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff00ff, #ff6600, #ffcc00);
+}
+
+
+.gradient-border {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+
+.gradient-border img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.story-db {
+  width: 40px;
+}
