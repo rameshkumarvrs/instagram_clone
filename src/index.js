@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/story",
+    path: "/story/:id",
     element: <Viewstory />
   }
 ])
