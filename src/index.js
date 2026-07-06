@@ -4,12 +4,31 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Viewstory from './Viewstory';
+
+const router = createBrowserRouter([
+
+  {
+    path: '/',
+    element: <App />
+  },
+
+  {
+    path: "/story",
+    element: <Viewstory />
+  }
+])
+
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  
+   <RouterProvider router={router}/>
+ 
 );
 
 // If you want to start measuring performance in your app, pass a function
