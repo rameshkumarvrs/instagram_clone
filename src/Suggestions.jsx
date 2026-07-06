@@ -7,15 +7,15 @@ const Suggestions = () => {
 
   
   useEffect(()=> {
-    fetch("http://localhost:3002/profile").
-    then(data => data.json()).
-    then(data=> setProfile(data)).
-    catch(err => console.log(err))
+    fetch("http://localhost:3002/profile")
+    .then(data => data.json())
+    .then(data=> setProfile(data))
+    .catch(err => console.log(err))
 
-     fetch("http://localhost:3002/suggestions").
-    then(data => data.json()).
-    then(data=> setSuggestions(data)).
-    catch(err => console.log(err))
+     fetch("http://localhost:3002/suggestions")
+     .then(data => data.json())
+     .then(data=> setSuggestions(data))
+     .catch(err => console.log(err))
 
   },[])
 

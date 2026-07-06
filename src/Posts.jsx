@@ -6,10 +6,10 @@ function Posts() {
   const [posts,setPosts] = useState([])
 
   useEffect(()=> {
-    fetch("http://localhost:3002/posts").
-    then((data) => data.json()).
-    then((data) => setPosts(data)).
-    catch((error) => console.log(error))
+    fetch("http://localhost:3002/posts")
+    .then((data) => data.json())
+    .then((data) => setPosts(data))
+    .catch((error) => console.log(error))
   },[])
 
 

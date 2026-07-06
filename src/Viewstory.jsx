@@ -9,10 +9,10 @@ const Viewstory = () => {
     const [story, setStory] = useState(null)
 
     useEffect(() => {
-        fetch(`http://localhost:3002/story/${id}`).
-        then((data) => data.json()).
-        then((data) => setStory(data)).
-        catch((err) => console.log(err))
+        fetch(`http://localhost:3002/story/${id}`)
+        .then((data) => data.json())
+        .then((data) => setStory(data))
+        .catch((err) => console.log(err))
     },[id])
 
     if(id > tot || id < 1) {
