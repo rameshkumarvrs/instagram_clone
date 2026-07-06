@@ -7,15 +7,17 @@ const Viewstory = () => {
     const [story, setStory] = useState(null)
 
     useEffect(() => {
-        fetch(`http://localhost:3000/story/${id}`).
+        fetch(`http://localhost:3002/story/${id}`).
         then((data) => data.json()).
         then((data) => setStory(data)).
         catch((err) => console.log(err))
-    })
+    },[])
 
 
   return (
-    <div>{id}</div>
+    
+    <div>{story? <div>{story.username}</div> : <div>Loading...</div>}
+    </div>
   )
 }
 
