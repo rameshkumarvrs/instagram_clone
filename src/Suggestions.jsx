@@ -39,10 +39,11 @@ const Suggestions = () => {
        {suggestions.length > 0 ? (
         <div>
            {suggestions.map((suggestion)=>(
-            <div className='my-3' key={suggestion.id}>
+            <div  key={suggestion.id}>
                <div className='d-flex'>
                 <img className="dp rounded-circle" src={suggestion.profilePic} alt="Profile pic" />
                 <h5>{suggestion.username}</h5>
+                <p className='text-primary ms-auto'>follow</p>
                </div>
               
             </div>
@@ -50,7 +51,7 @@ const Suggestions = () => {
         </div>
       ) : (
         <div>
-          Loading posts
+          Loading 
         </div>
       )}
 
