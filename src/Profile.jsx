@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
+import { Link } from 'react-router-dom';
+
 
 //import axios from "axios";
 
@@ -81,9 +83,20 @@ const Profile = () => {
     <div className='m-5'>
         {profile ? (
             <div>
+                
+                <div>
+               
                 <img  src={profile.profilePic} className='profile rounded-circle' alt="" />
+                 <Link className="d-flex justify-content-center" to="/">Home</Link>
                 <p>{profile.username}</p>
 
+                </div>
+
+                <div>
+                
+
+                </div>
+                
 
                 <div >
                      <input type="text" 
@@ -106,6 +119,8 @@ const Profile = () => {
                 <button className='btn btn-primary my-4' onClick={handleUpdate}>Update</button>
 
                 </div>
+
+                
 
                
 
