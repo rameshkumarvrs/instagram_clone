@@ -57,7 +57,21 @@ const Suggestions = () => {
                <div className='d-flex'>
                 <img className="dp rounded-circle" src={suggestion.profilePic} alt="Profile pic" />
                 <h5>{suggestion.username}</h5>
-                <a className='text-primary ms-auto' onClick={() => handleFollow(suggestion.id, suggestion.username, suggestion.profilePic)}>follow</a>
+                {/* <a className='text-primary ms-auto' onClick={() => handleFollow(suggestion.id, suggestion.username, suggestion.profilePic)}>follow</a> */}
+
+                <button
+                    type="button"
+                    className="btn btn-link text-primary ms-auto p-0 border-0"
+                    onClick={() =>
+                      handleFollow(
+                        suggestion.id,
+                        suggestion.username,
+                        suggestion.profilePic
+                      )
+                    }
+                  >
+                    Follow
+                </button>
                </div>
               
             </div>
