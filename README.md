@@ -1,3 +1,9 @@
+<img width="1366" height="768" alt="Screenshot from 2026-07-07 23-11-23" src="https://github.com/user-attachments/assets/bd741c85-80ef-472a-81bd-609bdcdd0009" />
+<img width="1366" height="768" alt="Screenshot from 2026-07-07 23-11-15" src="https://github.com/user-attachments/assets/8987139e-9e53-4d12-bb29-c7106e0b4fc7" />
+<img width="1366" height="768" alt="Screenshot from 2026-07-07 23-11-07" src="https://github.com/user-attachments/assets/f22e7f92-20ec-4595-8031-1a400ccaa635" />
+<img width="1366" height="768" alt="Screenshot from 2026-07-07 23-10-58" src="https://github.com/user-attachments/assets/12785986-fdad-4a12-8c48-e769dddd0b6f" />
+<img width="1366" height="768" alt="Screenshot from 2026-07-07 23-10-36" src="https://github.com/user-attachments/assets/65c21b6d-87a2-4d0e-93de-4b0a6b2d1093" />
+<img width="1366" height="768" alt="Screenshot from 2026-07-07 23-10-27" src="https://github.com/user-attachments/assets/39633217-1c75-46b6-8852-a3fa66eb65af" />
 # Instagram Clone
 
 A simple Instagram clone built with React, Bootstrap, Axios, and JSON Server.
