@@ -1,4 +1,8 @@
+//import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { create } from "axios";
+
+const axios = create();
 
 const Suggestions = () => {
 
@@ -18,6 +22,16 @@ const Suggestions = () => {
      .catch(err => console.log(err))
 
   },[])
+
+  const handleFollow = (id, username, profilepic) => {
+    axios.post("http://localhost:3002/followers",{
+  "id": id,
+  "username": username,
+  "profilePic": profilepic
+})
+    .then(() => {alert("followed")})
+    .catch(err => {console.log(err)}) 
+  }
 
   return (
     <div>
@@ -43,7 +57,7 @@ const Suggestions = () => {
                <div className='d-flex'>
                 <img className="dp rounded-circle" src={suggestion.profilePic} alt="Profile pic" />
                 <h5>{suggestion.username}</h5>
-                <p className='text-primary ms-auto'>follow</p>
+                <a className='text-primary ms-auto' onClick={() => handleFollow(suggestion.id, suggestion.username, suggestion.profilePic)}>follow</a>
                </div>
               
             </div>
