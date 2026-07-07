@@ -24,7 +24,29 @@ const Profile = () => {
         {profile ? (
             <div>
                 <img  src={profile.profilePic} className='profile rounded-circle' alt="" />
-                {profile.username}
+                <p>{profile.username}</p>
+
+
+                <div >
+                     <input type="text" 
+                       name = "username"
+                       value = {profile.username}
+                       className='form-control my-3' 
+                       style={{width: "50%"}}
+                
+                />
+
+                <input type="text" 
+                       name = "profilePic"
+                       value = {profile.profilePic}
+                        className='form-control'
+                         style={{width: "50%"}}
+                />
+
+                </div>
+
+               
+
             </div>
         )
         : 
