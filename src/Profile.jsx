@@ -17,6 +17,8 @@ const Profile = () => {
 
     const [followers,setFollowers] = useState(null)
 
+    const [unFollowed, setUnFolowed] = useState(0)
+
     //const axios = new Axios({});
 
      
@@ -36,7 +38,7 @@ const Profile = () => {
         })    
         
         })
-     },[])
+     },[unFollowed])
 
      function onChangeHandler (e) {
 
@@ -81,6 +83,7 @@ const handleDelete = async (id) => {
 
     axios.delete(`http://localhost:3002/followers/${id}`)
     .then(() => alert("unfollowed"))
+    .then(setUnFolowed(!unFollowed))
     .catch((err) => {console.log(err)})
 
 }
