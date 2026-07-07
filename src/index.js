@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Viewstory from './Viewstory';
+import Profile from './Profile';
 
 const router = createBrowserRouter([
 
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
   {
     path: "/story/:id/:tot",
     element: <Viewstory />
+  },
+
+  {
+    path: "/profile",
+    element: <Profile />
   }
 ])
 

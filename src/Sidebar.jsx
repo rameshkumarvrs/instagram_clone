@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Sidebar = () => {
+  const navigate = useNavigate()
   return (
     
     <div className='m-3 position-fixed'>
@@ -13,7 +15,7 @@ const Sidebar = () => {
             <div><i className="bi bi-chat-dots"></i>Messages</div>
             <div><i className="bi bi-heart"></i>Notifications</div>
             <div><i className="bi bi-file-plus"></i>Create</div>
-            <div><i className="bi bi-person-circle"></i>Profile</div>
+            <div onClick={()=> navigate('/profile')}><i className="bi bi-person-circle"></i>Profile</div>
             
         </div>
 
