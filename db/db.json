@@ -168,14 +168,14 @@
         "id": 2,
       "userId": 2,
       "username": "jane_smith",
-      "profilePic": "https://i.pravatar.cc/150?img=2",
+      "profilePic": "https://i.pravatar.cc/150?img=2"
   },
 
   {
       "id": 3,
       "userId": 3,
       "username": "alex_99",
-      "profilePic": "https://i.pravatar.cc/150?img=3",
+      "profilePic": "https://i.pravatar.cc/150?img=3"
       
     },
 
@@ -183,7 +183,7 @@
       "id": 4,
       "userId": 4,
       "username": "emma_w",
-      "profilePic": "https://i.pravatar.cc/150?img=4",
+      "profilePic": "https://i.pravatar.cc/150?img=4"
       
     },
 
@@ -191,7 +191,7 @@
       "id": 5,
       "userId": 5,
       "username": "david_k",
-      "profilePic": "https://i.pravatar.cc/150?img=5",
+      "profilePic": "https://i.pravatar.cc/150?img=5"
      
     }
 

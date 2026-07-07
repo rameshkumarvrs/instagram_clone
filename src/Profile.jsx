@@ -13,6 +13,8 @@ const axios = create();
 const Profile = () => {
     const [profile, setProfile] = useState(null)
 
+    const [followers,setFollowers] = useState(null)
+
     //const axios = new Axios({});
 
      
@@ -22,6 +24,14 @@ const Profile = () => {
             //const profile = JSON.parse(data.data)
             //setProfile(profile); console.log(profile)
             setProfile(data.data); console.log(data.data)
+            
+            
+
+        axios.get("http://localhost:3002/followers")
+        .then((data) => {
+            setFollowers(data.data); console.log(data.data)
+            
+        })    
         
         })
      },[])
@@ -105,7 +115,24 @@ const Profile = () => {
         (<div>
             Loading.......
         </div>)}
+
+        <div>
+        {followers ? 
+        (<div> 
+
+         {followers.map((follower) => (
+            <div key={follower.id}>{follower.username}</div>
+         ))}
+
+        </div>) 
+        : 
+        
+        (<div> followers loading.......</div>)}
     </div>
+
+    </div>
+
+    
   )
 }
 
