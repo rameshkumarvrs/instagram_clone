@@ -19,6 +19,13 @@ const Profile = () => {
         })
      },[])
 
+     function onChangeHandler (e) {
+       setProfile((prev) => ({
+        ...prev,
+        [e.target.name]: e.target.value
+       }))
+     }
+
   return (
     <div className='m-5'>
         {profile ? (
@@ -33,15 +40,19 @@ const Profile = () => {
                        value = {profile.username}
                        className='form-control my-3' 
                        style={{width: "50%"}}
+                       onChange={onChangeHandler}
                 
                 />
 
                 <input type="text" 
                        name = "profilePic"
                        value = {profile.profilePic}
-                        className='form-control'
-                         style={{width: "50%"}}
+                       className='form-control'
+                       style={{width: "50%"}}
+                       onChange={onChangeHandler}
                 />
+
+                <button className='btn btn-primary my-4'>Update</button>
 
                 </div>
 
