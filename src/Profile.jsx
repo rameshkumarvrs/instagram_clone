@@ -1,30 +1,71 @@
 import React, { useEffect, useState } from 'react'
 
 
-import axios from "axios";
-import { Axios } from "axios";
+//import axios from "axios";
+
+
+import { create } from "axios";
+
+const axios = create();
+
+//import { Axios } from "axios";
 
 const Profile = () => {
     const [profile, setProfile] = useState(null)
 
-    const axios = new Axios({});
+    //const axios = new Axios({});
 
      
      useEffect(()=>{
         axios.get("http://localhost:3002/profile")
         .then((data) => {
-            const profile = JSON.parse(data.data)
-            setProfile(profile); console.log(profile)
+            //const profile = JSON.parse(data.data)
+            //setProfile(profile); console.log(profile)
+            setProfile(data.data); console.log(data.data)
         
         })
      },[])
 
      function onChangeHandler (e) {
+
+        
        setProfile((prev) => ({
         ...prev,
         [e.target.name]: e.target.value
        }))
      }
+
+    //  const handleUpdate = async () => {
+
+        
+    //     axios.put("http://localhost:3002/profile",profile)
+    //     .then((response) => {
+    //         console.log("updated")
+    //         console.log(response.data)
+    //         //console.log(profile);
+    //         //console.log(typeof profile);
+    //         console.log("Profile before PUT:", profile);
+    //          console.log("JSON:", JSON.stringify(profile));
+    //     })
+    //     .catch((err) => console.log(err) )
+    //     }
+
+    const handleUpdate = async () => {
+  try {
+    console.log("Sending:", profile);
+
+    const response = await axios.put(
+      "http://localhost:3002/profile",
+      profile
+    );
+
+    console.log("Response:", response.data);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+     
 
   return (
     <div className='m-5'>
@@ -52,7 +93,7 @@ const Profile = () => {
                        onChange={onChangeHandler}
                 />
 
-                <button className='btn btn-primary my-4'>Update</button>
+                <button className='btn btn-primary my-4' onClick={handleUpdate}>Update</button>
 
                 </div>
 

@@ -73,60 +73,39 @@
       "createdAt": "2026-07-03T20:30:00Z"
     }
   ],
-  "profile":  {
+  "profile": {
+    "id": 1,
+    "username": "ochaye",
+    "profilePic": "https://i.pravatar.cc/150?img=1"
+  },
+  "suggestions": [
+    {
       "id": 1,
-      
       "username": "john_doe",
       "profilePic": "https://i.pravatar.cc/150?img=1"
-      
-      
     },
-
-    "suggestions": [
-      {
-      "id": 1,
-      
-      "username": "john_doe",
-      "profilePic": "https://i.pravatar.cc/150?img=1"
-      
-    },
-     {
+    {
       "id": 2,
-      
       "username": "jane_smith",
       "profilePic": "https://i.pravatar.cc/150?img=2"
-      
     },
-
     {
       "id": 3,
-     
       "username": "alex_99",
       "profilePic": "https://i.pravatar.cc/150?img=3"
-     
     },
-
     {
       "id": 4,
-     
       "username": "emma_w",
       "profilePic": "https://i.pravatar.cc/150?img=4"
-      
     },
-
     {
       "id": 5,
-      
       "username": "emma_w",
       "profilePic": "https://i.pravatar.cc/150?img=5"
-    
     }
-
-
-
-    ],
-
-    "story": [
+  ],
+  "story": [
     {
       "id": 1,
       "userId": 1,
@@ -134,7 +113,6 @@
       "profilePic": "https://i.pravatar.cc/150?img=1",
       "image": "https://picsum.photos/600/600?random=1",
       "caption": "Morning coffee ☕ Ready for a productive day!",
-      
       "createdAt": "2026-07-03T07:30:00Z"
     },
     {
@@ -144,7 +122,6 @@
       "profilePic": "https://i.pravatar.cc/150?img=2",
       "image": "https://picsum.photos/600/600?random=2",
       "caption": "Work mode ON 💻"
-      
     },
     {
       "id": 3,
@@ -153,7 +130,6 @@
       "profilePic": "https://i.pravatar.cc/150?img=3",
       "image": "https://picsum.photos/600/600?random=3",
       "caption": "Gym session completed 💪"
-      
     },
     {
       "id": 4,
@@ -162,7 +138,6 @@
       "profilePic": "https://i.pravatar.cc/150?img=4",
       "image": "https://picsum.photos/600/600?random=4",
       "caption": "Lunch with friends 🍕❤️"
-    
     },
     {
       "id": 5,
@@ -171,7 +146,6 @@
       "profilePic": "https://i.pravatar.cc/150?img=5",
       "image": "https://picsum.photos/600/600?random=5",
       "caption": "Beautiful sunset 🌅"
-      
     },
     {
       "id": 6,
@@ -180,7 +154,6 @@
       "profilePic": "https://i.pravatar.cc/150?img=1",
       "image": "https://picsum.photos/600/600?random=6",
       "caption": "Night coding session 🚀"
-    
     }
   ]
 }
