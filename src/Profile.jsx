@@ -77,6 +77,14 @@ const Profile = () => {
   }
 };
 
+const handleDelete = async (id) => {
+
+    axios.delete(`http://localhost:3002/followers/${id}`)
+    .then(() => alert("unfollowed"))
+    .catch((err) => {console.log(err)})
+
+}
+
      
 
   return (
@@ -136,9 +144,9 @@ const Profile = () => {
         (<div> 
 
          {followers.map((follower) => (
-            <div key={follower.id}>
+            <div key={follower.id} className='d-flex  my-3'>
                 {follower.username}
-                <button className='btn btn-danger mx-5 my-3' onClick={() => {handleDelete(follower.id)}}>Delete</button>
+                <button className='btn btn-danger ms-auto' onClick={() => {handleDelete(follower.id)}}>unFollow</button>
             
             </div>
          ))}
