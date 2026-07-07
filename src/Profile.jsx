@@ -1,10 +1,36 @@
-import React from 'react'
-import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+
+
+import axios from "axios";
+import { Axios } from "axios";
 
 const Profile = () => {
-    
+    const [profile, setProfile] = useState(null)
+
+    const axios = new Axios({});
+
+     
+     useEffect(()=>{
+        axios.get("http://localhost:3002/profile")
+        .then((data) => {
+            const profile = JSON.parse(data.data)
+            setProfile(profile); console.log(profile)
+        
+        })
+     },[])
+
   return (
-    <div>Profile</div>
+    <div>
+        {profile ? (
+            <div>
+                {profile.username}
+            </div>
+        )
+        : 
+        (<div>
+            Loading.......
+        </div>)}
+    </div>
   )
 }
 
