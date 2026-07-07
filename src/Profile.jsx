@@ -136,7 +136,11 @@ const Profile = () => {
         (<div> 
 
          {followers.map((follower) => (
-            <div key={follower.id}>{follower.username}</div>
+            <div key={follower.id}>
+                {follower.username}
+                <button className='btn btn-danger mx-5 my-3' onClick={() => {handleDelete(follower.id)}}>Delete</button>
+            
+            </div>
          ))}
 
         </div>) 
