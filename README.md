@@ -52,3 +52,27 @@ http://localhost:3000
 * Axios
 * Bootstrap
 * JSON Server
+
+
+# Instagram Clone
+
+## Screenshot
+
+![Instagram Clone](screenshots)
+
+## Live Demo
+
+https://insta9369.netlify.app/
+
+## Source Code
+
+https://github.com/rameshkumarvrs/instagram_clone
+
+## Note
+
+This project uses JSON Server as the backend.
+
+Start the backend before running the application:
+
+```bash
+npx json-server --watch db/db.json --port 3002 --static ./db
