@@ -20,9 +20,10 @@ const Profile = () => {
      },[])
 
   return (
-    <div>
+    <div className='m-5'>
         {profile ? (
             <div>
+                <img  src={profile.profilePic} className='profile rounded-circle' alt="" />
                 {profile.username}
             </div>
         )
